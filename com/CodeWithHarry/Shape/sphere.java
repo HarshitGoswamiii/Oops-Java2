@@ -1,3 +1,5 @@
+package com.CodeWithHarry.Shape;
+
 public class sphere extends shapes {
     sphere(int dim1, int dim2) {
         super(dim1, dim2);

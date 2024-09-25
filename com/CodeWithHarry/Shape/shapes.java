@@ -1,3 +1,5 @@
+package com.CodeWithHarry.Shape;
+
 public class shapes {
     int dim1, dim2;
 

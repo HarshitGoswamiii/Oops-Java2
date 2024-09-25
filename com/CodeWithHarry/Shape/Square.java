@@ -1,3 +1,5 @@
+package com.CodeWithHarry.Shape;
+
 public class Square extends shapes {
     Square(int dim1) {
         super(dim1, -1);
