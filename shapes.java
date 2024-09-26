@@ -33,8 +33,8 @@ class Rectangle { // Class for Rectangle
         this.breadth = breadth;
     }
 
-    public void Area() {
-        System.out.println(this.length * this.breadth);
+    public double Area() {
+        return this.length * this.breadth;
     }
 }
 
@@ -49,13 +49,13 @@ class Circle { // Class For Circle
         this.radius = radius;
     }
 
-    public void Area() {
-        System.out.println(Math.PI * radius * radius);
+    public double Area() {
+        return Math.PI * radius * radius;
     }
 }
 
 class Cylinder extends Circle {
-    int height;
+    private int height;
 
     public int GetHeight(int height) {
         return this.height;
@@ -63,6 +63,10 @@ class Cylinder extends Circle {
 
     public void SetHeight(int height) {
         this.height = height;
+    }
+
+    public double CalculateVolume() {
+        return super.Area() * height;
     }
 }
 
