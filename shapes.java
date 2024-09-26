@@ -24,11 +24,14 @@ class Rectangle{
         return this.breadth;
     }
     public void SetLength(int length) {
-        this.side = side;
+        this.length = length;
+    }
+    public void SetBreadth(int breadth) {
+        this.breadth = breadth;
     }
 
     public void Area() {
-        System.out.println(this.side * this.side);
+        System.out.println(this.length * this.breadth);
     }   
 }
 public class Shapes {
