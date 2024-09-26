@@ -1,7 +1,7 @@
 class Square { // Class for Square
     int side;
 
-    public int GetSide(int side) {
+    public int GetSide() {
         return this.side;
     }
 
@@ -17,11 +17,11 @@ class Square { // Class for Square
 class Rectangle { // Class for Rectangle
     int length, breadth;
 
-    public int GetLength(int length) {
+    public int GetLength() {
         return this.length;
     }
 
-    public int GetBreadth(int breadth) {
+    public int GetBreadth() {
         return this.breadth;
     }
 
@@ -41,7 +41,10 @@ class Rectangle { // Class for Rectangle
 class Circle { // Class For Circle
     int radius;
 
-    public int GetRadius(int radius) {
+    Circle(int radius){
+        this.radius= radius;
+    }
+    public int GetRadius() {
         return this.radius;
     }
 
@@ -57,7 +60,7 @@ class Circle { // Class For Circle
 class Cylinder extends Circle {
     private int height;
 
-    public int GetHeight(int height) {
+    public int GetHeight() {
         return this.height;
     }
 
@@ -67,6 +70,16 @@ class Cylinder extends Circle {
 
     public double CalculateVolume() {
         return super.Area() * height;
+    }
+}
+
+class Sphere extends Circle {
+
+    public Sphere(int radius) {
+        super(radius);
+    }
+    public double CalculateVolume() {
+        return (4 / 3) * super.Area() * radius;
     }
 }
 
