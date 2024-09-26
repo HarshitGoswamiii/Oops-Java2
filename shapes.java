@@ -34,6 +34,7 @@ class Rectangle{                           //Class for Rectangle
         System.out.println(this.length * this.breadth);
     }   
 }
+class 
 public class Shapes {
     public static void main(String[] args) {
         
