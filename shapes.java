@@ -1,3 +1,4 @@
+
 class Square { // Class for Square
     int side;
 
@@ -41,10 +42,6 @@ class Rectangle { // Class for Rectangle
 class Circle { // Class For Circle
     int radius;
 
-    Circle(int radius) {
-        this.radius = radius;
-    }
-
     public int GetRadius() {
         return this.radius;
     }
@@ -61,10 +58,6 @@ class Circle { // Class For Circle
 class Cylinder extends Circle {
     int height;
 
-    public Cylinder(int radius) {
-        super(radius);
-    }
-
     public int GetHeight() {
         return this.height;
     }
@@ -80,16 +73,16 @@ class Cylinder extends Circle {
 
 class Sphere extends Circle {
 
-    public Sphere(int radius) {
-        super(radius);
-    }
 
     public double CalculateVolume() {
         return (4.0 / 3) * super.Area() * radius;
     }
 }
 
-public class Shapes {
+public class shapes {
     public static void main(String[] args) {
+        Circle cr =new Circle();
+        cr.SetRadius(8);
+        System.out.println(cr.Area()); 
     }
 }
