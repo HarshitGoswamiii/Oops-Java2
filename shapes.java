@@ -41,16 +41,28 @@ class Rectangle { // Class for Rectangle
 class Circle { // Class For Circle
     int radius;
 
-    public void GetRadius(int radius) {
-        this.radius = radius;
+    public int GetRadius(int radius) {
+        return this.radius;
     }
 
-    public int SetRadius(int radius) {
-        return this.radius;
+    public void SetRadius(int radius) {
+        this.radius = radius;
     }
 
     public void Area() {
         System.out.println(Math.PI * radius * radius);
+    }
+}
+
+class Cylinder extends Circle {
+    int height;
+
+    public int GetHeight(int height) {
+        return this.height;
+    }
+
+    public void SetHeight(int height) {
+        this.height = height;
     }
 }
 
