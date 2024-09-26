@@ -42,6 +42,9 @@ class Circle{
     public int SetRadius(int radius){
         return this.radius;
     }
+    public void Area(){
+        System.out.println(Math.PI*radius*radius);
+    }
 }
 public class Shapes {
     public static void main(String[] args) {
