@@ -9,8 +9,8 @@ class Square { // Class for Square
         this.side = side;
     }
 
-    public void Area() {
-        System.out.println(this.side * this.side);
+    public int Area() {
+        return this.side * this.side;
     }
 }
 
@@ -41,9 +41,10 @@ class Rectangle { // Class for Rectangle
 class Circle { // Class For Circle
     int radius;
 
-    Circle(int radius){
-        this.radius= radius;
+    Circle(int radius) {
+        this.radius = radius;
     }
+
     public int GetRadius() {
         return this.radius;
     }
@@ -58,7 +59,11 @@ class Circle { // Class For Circle
 }
 
 class Cylinder extends Circle {
-    private int height;
+    int height;
+
+    public Cylinder(int radius) {
+        super(radius);
+    }
 
     public int GetHeight() {
         return this.height;
@@ -78,8 +83,9 @@ class Sphere extends Circle {
     public Sphere(int radius) {
         super(radius);
     }
+
     public double CalculateVolume() {
-        return (4 / 3) * super.Area() * radius;
+        return (4.0 / 3) * super.Area() * radius;
     }
 }
 
