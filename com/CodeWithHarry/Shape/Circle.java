@@ -7,5 +7,9 @@ public class Circle extends shapes {
 
     public void Area() {
         System.out.println((22 / 4) * this.dim1 * this.dim1);
+        
+    }
+    public static void main(String[] args) {
+        
     }
 }
