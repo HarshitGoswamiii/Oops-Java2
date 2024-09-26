@@ -36,8 +36,11 @@ class Rectangle{                           //Class for Rectangle
 }
 class Circle{
     int radius;
-    public int GetRadius(int radius){
+    public void GetRadius(int radius){
         this.radius=radius;
+    }
+    public int SetRadius(int radius){
+        return this.radius;
     }
 }
 public class Shapes {
