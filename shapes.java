@@ -1,8 +1,38 @@
-public class shapes {
-    int dim1, dim2;
+class Square{
+    int side;
 
-    shapes(int dim1, int dim2) {
-        this.dim1 = dim1;
-        this.dim2 = dim2;
+    public int GetSide(int side) {
+        return this.side;
+    }
+
+    public void SetSide(int side) {
+        this.side = side;
+    }
+
+    public void Area() {
+        System.out.println(this.side * this.side);
+    }   
+}
+
+class Rectangle{
+    int length,breadth;
+
+    public int GetLength(int length) {
+        return this.length;
+    }
+    public int GetBreadth(int breadth) {
+        return this.breadth;
+    }
+    public void SetLength(int length) {
+        this.side = side;
+    }
+
+    public void Area() {
+        System.out.println(this.side * this.side);
+    }   
+}
+public class Shapes {
+    public static void main(String[] args) {
+        
     }
 }
