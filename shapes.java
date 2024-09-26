@@ -34,7 +34,12 @@ class Rectangle{                           //Class for Rectangle
         System.out.println(this.length * this.breadth);
     }   
 }
-class 
+class Circle{
+    int radius;
+    public int GetRadius(int radius){
+        this.radius=radius;
+    }
+}
 public class Shapes {
     public static void main(String[] args) {
         
