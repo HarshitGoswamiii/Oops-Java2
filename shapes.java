@@ -1,4 +1,4 @@
-class Square{
+class Square{                           //Class for Square
     int side;
 
     public int GetSide(int side) {
@@ -14,7 +14,7 @@ class Square{
     }   
 }
 
-class Rectangle{
+class Rectangle{                           //Class for Rectangle
     int length,breadth;
 
     public int GetLength(int length) {
