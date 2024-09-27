@@ -1,4 +1,4 @@
-
+package com.CodeWithHarry.Shapes;
 class Square { // Class for Square
     int side;
 
