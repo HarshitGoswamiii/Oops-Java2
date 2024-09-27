@@ -1,4 +1,4 @@
-import com.CodeWithHarry.Shapes.*;
+import com.CodeWithHarry.Shapes.Rectangle;
 
 public class testing {
     public static void main(String[] args) {
