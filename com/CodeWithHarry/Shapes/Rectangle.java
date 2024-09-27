@@ -20,7 +20,7 @@ public class Rectangle { // Class for Rectangle
         this.breadth = breadth;
     }
 
-    public double Area() {
+    public int Area() {
         return this.length * this.breadth;
     }
     public static void main(String[] args) {
