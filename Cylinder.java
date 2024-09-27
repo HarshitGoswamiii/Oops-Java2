@@ -19,6 +19,6 @@ public class Cylinder extends Circle {
         Cylinder cyl = new Cylinder();
         cyl.SetRadius(4);
         cyl.SetHeight(3);
-        System.out.println(cyl.Area());
+        System.out.println(cyl.CalculateVolume());
     }
 }

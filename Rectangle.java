@@ -24,5 +24,9 @@ public class Rectangle { // Class for Rectangle
         return this.length * this.breadth;
     }
     public static void main(String[] args) {
+        Rectangle rec= new Rectangle();
+        rec.SetLength(3);
+        rec.SetBreadth(5);
+        System.out.println(rec.Area());
     }
 }

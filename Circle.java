@@ -17,5 +17,7 @@ public class Circle { // Class For Circle
     }
     public static void main(String[] args) {
         Circle crl = new Circle();
+        crl.SetRadius(4);
+        System.out.println(crl.Area());
     }
 }

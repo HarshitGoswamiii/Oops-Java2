@@ -9,6 +9,6 @@ public class Sphere extends Circle {
     public static void main(String[] args) {
         Sphere sph = new Sphere();
         sph.SetRadius(3);
-        System.out.println(sph.Area());
+        System.out.println(sph.CalculateVolume());
     }
 }
