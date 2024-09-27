@@ -5,6 +5,7 @@ public class testing {
         // Circle cir = new Circle();
         // cir.SetRadius(4);
         // System.out.println("Area of Circle : "+cir.Area());
+        
         Rectangle cir = new Rectangle();
         cir.SetLength(3);
         cir.SetBreadth(4);
