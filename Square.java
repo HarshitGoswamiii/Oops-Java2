@@ -15,5 +15,8 @@ public class Square { // Class for Square
         return this.side * this.side;
     }
     public static void main(String[] args) {
+        Square Sqr = new Square();
+        Sqr.SetSide(4);
+        System.out.println(Sqr.Area());
     }
 }
