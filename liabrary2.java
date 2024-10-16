@@ -9,6 +9,9 @@ class Desk {
         for (int j = 0; j < Books.length; j++) {
             Scanner b = new Scanner(System.in);
             String Book = b.nextLine();
+            if(Book=="End"){
+                
+            }
             if (TotalBooks >= Books.length) {
                 System.out.println("Shelf is Full \nThere is no space for new book");
             } else {
