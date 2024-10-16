@@ -15,6 +15,7 @@ class Desk {
 
     // For Showing Available Books
     public void AvailableBooks() {
+        System.out.println("Available Books : ");
         for (int i = 0; i < TotalBooks; i++) {
             System.out.println(Books[i]);
         }
