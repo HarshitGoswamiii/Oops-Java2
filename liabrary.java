@@ -15,8 +15,9 @@ class Desk {
 
     // For Showing Available Books
     public void AvailableBooks() {
-
-
+        for (int i = 0; i < TotalBooks; i++) {
+            System.out.println(Books[i]);
+        }
     }
 
     // For Returning Books
@@ -27,6 +28,10 @@ class Desk {
 
 public class liabrary {
     public static void main(String[] args) {
-
+        Desk Dsk = new Desk();
+        Dsk.AddBooks("Computer Graphics");
+        Dsk.AddBooks("Operating System");
+        Dsk.AddBooks("");
+        Dsk.AddBooks("Database Management System");
     }
 }
