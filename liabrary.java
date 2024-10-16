@@ -31,7 +31,9 @@ public class liabrary {
         Desk Dsk = new Desk();
         Dsk.AddBooks("Computer Graphics");
         Dsk.AddBooks("Operating System");
-        Dsk.AddBooks("");
+        Dsk.AddBooks("Computer Networking");
         Dsk.AddBooks("Database Management System");
+
+        Dsk.AvailableBooks();
     }
 }
