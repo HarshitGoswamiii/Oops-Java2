@@ -17,7 +17,7 @@ class Desk {
         System.out.print("Book To be Issued : "+Issue);
         for(int i = 0 ; i < TotalBooks;i++){
             if(Books[i].equals(Issue)){
-                System.out.println("Books Is Issued ! ");
+                System.out.println("\nBooks Is Issued ! ");
                 Books[i]=null;
             }
         }
@@ -27,6 +27,9 @@ class Desk {
     public void AvailableBooks() {
         System.out.println("Available Books : ");
         for (int i = 0; i < TotalBooks; i++) {
+            if(Books[i]==null){
+                continue;
+            }
             System.out.println(Books[i]);
         }
     }
@@ -46,5 +49,10 @@ public class liabrary {
         Dsk.AddBooks("Database Management System");
 
         Dsk.AvailableBooks();
+
+        Dsk.IssueBooks("Computer Graphics");
+
+        Dsk.AvailableBooks();
+
     }
 }
