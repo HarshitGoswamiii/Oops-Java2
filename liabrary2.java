@@ -10,7 +10,7 @@ class Desk {
             Scanner b = new Scanner(System.in);
             System.out.print("Enter Book Name : ");
             String Book = b.nextLine();
-            if (Book == "End") {
+            if (Books.equals("End")) {
                 break;
             } else {
                 if (TotalBooks >= Books.length) {
