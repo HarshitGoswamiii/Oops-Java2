@@ -6,16 +6,21 @@ class Desk {
     public void AddBooks(String books) {
         if (TotalBooks >= Books.length) {
             System.out.println("Shelf is Full \nThere is no space for new book");
-        }
-        else{
+        } else {
             Books[TotalBooks] = books;
             TotalBooks++;
         }
     }
-    
-    // For Issuing Books
-    public void IssueBooks() {
 
+    // For Issuing Books
+    public void IssueBooks(String Issue) {
+        System.out.print("Book To be Issued : "+Issue);
+        for(int i = 0 ; i < TotalBooks;i++){
+            if(Books[i].equals(Issue)){
+                System.out.println("Books Is Issued ! ");
+                Books[i]=null;
+            }
+        }
     }
 
     // For Showing Available Books
