@@ -47,10 +47,14 @@ public class liabrary {
         Dsk.AddBooks("Operating System");
         Dsk.AddBooks("Computer Networking");
         Dsk.AddBooks("Database Management System");
-
+        System.out.println();
+        
         Dsk.AvailableBooks();
 
+        System.out.println();
+
         Dsk.IssueBooks("Computer Graphics");
+        System.out.println();
 
         Dsk.AvailableBooks();
 
