@@ -14,11 +14,11 @@ class Desk {
 
     // For Issuing Books
     public void IssueBooks(String Issue) {
-        System.out.print("Book To be Issued : "+Issue);
-        for(int i = 0 ; i < TotalBooks;i++){
-            if(Books[i].equals(Issue)){
+        System.out.print("Book To be Issued : " + Issue);
+        for (int i = 0; i < TotalBooks; i++) {
+            if (Books[i].equals(Issue)) {
                 System.out.println("\nBooks Is Issued ! ");
-                Books[i]=null;
+                Books[i] = null;
             }
         }
     }
@@ -27,7 +27,7 @@ class Desk {
     public void AvailableBooks() {
         System.out.println("Available Books : ");
         for (int i = 0; i < TotalBooks; i++) {
-            if(Books[i]==null){
+            if (Books[i] == null) {
                 continue;
             }
             System.out.println(Books[i]);
@@ -35,28 +35,38 @@ class Desk {
     }
 
     // For Returning Books
-    public void ReturnBooks() {
-
+    public void ReturnBooks(String retur) {
+        System.out.println("Book returning : " + retur);
+        Books[TotalBooks] = retur;
+        TotalBooks++;
     }
-}
 
 public class liabrary {
     public static void main(String[] args) {
         Desk Dsk = new Desk();
+        // Adding Books
         Dsk.AddBooks("Computer Graphics");
         Dsk.AddBooks("Operating System");
         Dsk.AddBooks("Computer Networking");
         Dsk.AddBooks("Database Management System");
         System.out.println();
-        
+        // Displaying Book
         Dsk.AvailableBooks();
 
         System.out.println();
 
         Dsk.IssueBooks("Computer Graphics");
         System.out.println();
+        
+        // Displaying Book
+        Dsk.AvailableBooks();
+
+        // Returning Books
+        Dsk.ReturnBooks("Computer Graphics");
 
         Dsk.AvailableBooks();
 
+
     }
+}
 }
