@@ -40,7 +40,7 @@ class Desk {
         Books[TotalBooks] = retur;
         TotalBooks++;
     }
-
+}
 public class liabrary {
     public static void main(String[] args) {
         Desk Dsk = new Desk();
@@ -60,13 +60,14 @@ public class liabrary {
         
         // Displaying Book
         Dsk.AvailableBooks();
+        System.out.println();
 
         // Returning Books
         Dsk.ReturnBooks("Computer Graphics");
+        System.out.println();
 
         Dsk.AvailableBooks();
 
 
     }
-}
 }
