@@ -1,4 +1,3 @@
-import java.security.interfaces.DSAKey;
 import java.util.Scanner;
 
 class Desk {
@@ -7,13 +6,15 @@ class Desk {
 
     // For Adding books
     public void AddBooks() {
-        Scanner b = new Scanner(System.in);
-        String Book = b.nextLine();
-        if (TotalBooks >= Books.length) {
-            System.out.println("Shelf is Full \nThere is no space for new book");
-        } else {
-            Books[TotalBooks] = Book;
-            TotalBooks++;
+        for (int j = 0; j < Books.length; j++) {
+            Scanner b = new Scanner(System.in);
+            String Book = b.nextLine();
+            if (TotalBooks >= Books.length) {
+                System.out.println("Shelf is Full \nThere is no space for new book");
+            } else {
+                Books[TotalBooks] = Book;
+                TotalBooks++;
+            }
         }
     }
 
@@ -54,14 +55,15 @@ class Desk {
 public class liabrary2 {
     public static void main(String[] args) {
         Desk dsk = new Desk();
-    int Looping = 4;
-        for (int i = 0; i < 10; i++) {
-            switch (Looping) {
-                case 1 -> {
-                    dsk.AddBooks();
-                }
-                default -> throw new AssertionError();
-            }
-        }
+        dsk.AddBooks();
+        // int Looping = 4;
+        // for (int i = 0; i < 10; i++) {
+        //     switch (Looping) {
+        //         case 1 -> {
+        //             dsk.AddBooks();
+        //         }
+        //         default -> throw new AssertionError();
+        //     }
+        // }
     }
 }
