@@ -12,6 +12,10 @@ class Desk {
             TotalBooks++;
         }
     }
+    // For Returning Books
+    public void IssueBooks() {
+
+    }
 
     // For Showing Available Books
     public void AvailableBooks() {
