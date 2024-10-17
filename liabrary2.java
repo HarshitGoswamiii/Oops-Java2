@@ -6,9 +6,9 @@ class Desk {
 
     // For Adding books
     public void AddBooks() {
-        for (int j = 0; j < Books.length; j++) {
+        for (int j = 1; j <= Books.length; j++) {
             Scanner b = new Scanner(System.in);
-            System.out.print("Enter Book Name (type 'end' to stop') :  ");
+            System.out.print("Enter Book "+j+" Name (type 'end' to stop') :  ");
             String Book = b.nextLine();
             if (Book.equals("end")) {
                 break;
