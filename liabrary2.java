@@ -27,8 +27,8 @@ class Desk {
 
     // For Issuing Books
     public void IssueBooks() {
+        System.out.print("Book To be Issued : ");
         String Issue = scan.nextLine();
-        System.out.print("Book To be Issued : " + Issue);
         for (int i = 0; i < TotalBooks; i++) {
             if (Books[i].equals(Issue)) {
                 System.out.println("\nBooks Is Issued ! ");
@@ -67,10 +67,10 @@ public class liabrary2 {
         Scanner scanning = new Scanner(System.in);
         System.out.println(
                 "1 -> For Adding Books \n2 -> For Issuing Books\n3 -> For Showing Available Books \n4 -> For Returning Books");
-
+        System.out.println("5 -> Exit");
         System.out.print("Enter Your Choice : ");
         int choice = scanning.nextInt();
-        for (int i = 0; i < 10; i++) {
+        while (true) {
             switch (choice) {
                 case 1 -> {
                     dsk.AddBooks(); // For Adding Books
@@ -84,6 +84,11 @@ public class liabrary2 {
                 case 4 -> {
                     dsk.ReturnBooks(); // For Returning Books
                 }
+                case 5 -> {
+                    System.out.println("Exiting...");
+                    break;
+                }
+                default -> System.out.println("Invalid Output. Please Try Again");
             }
         }
     }
