@@ -63,7 +63,9 @@ public class liabrary2 {
     public static void main(String[] args) {
         Desk dsk = new Desk();
         int Looping = 4;
-        System.out.println("Enter Your Choice : \n1 -> For Adding Books \n2 -> For Issuing Books\n3 -> For Showing Available Books \n4 -> For Returning Books");
+        System.out.println(
+                "1 -> For Adding Books \n2 -> For Issuing Books\n3 -> For Showing Available Books \n4 -> For Returning Books");
+        System.out.println("Enter Your Choice : ");
         for (int i = 0; i < 10; i++) {
             switch (Looping) {
                 case 1 -> {
