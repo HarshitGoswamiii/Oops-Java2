@@ -65,20 +65,19 @@ public class liabrary2 {
         System.out.println(
                 "1 -> For Adding Books \n2 -> For Issuing Books\n3 -> For Showing Available Books \n4 -> For Returning Books");
         System.out.print("Enter Your Choice : ");
-        for (int i = 0; i < 10; i++) {
-            switch (choice) {
-                case 1 -> {
-                    dsk.AddBooks();
-                }
-                case 2 -> {
-                    dsk.IssueBooks();
-                }
-                case 3 -> {
-                    dsk.AvailableBooks();
-                }
-                case 4 -> {
-                    dsk.ReturnBooks();
-                }
+
+        switch (choice) {
+            case 1 -> {
+                dsk.AddBooks(); // For Adding Books
+            }
+            case 2 -> {
+                dsk.IssueBooks(); // For Issuing Books
+            }
+            case 3 -> {
+                dsk.AvailableBooks(); // For Showing Available Books
+            }
+            case 4 -> {
+                dsk.ReturnBooks(); // For Returning Books
             }
         }
     }
