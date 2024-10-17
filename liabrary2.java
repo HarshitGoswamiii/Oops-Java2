@@ -50,6 +50,10 @@ class Desk {
 
     // For Returning Books
     public void ReturnBooks() {
+        if (TotalBooks >= Books.length) {
+            System.out.println("Shelf is full. Cannot return the book.");
+            return;
+        }
         String retur = scan.nextLine();
         System.out.println("Book returning : " + retur);
         Books[TotalBooks] = retur;
