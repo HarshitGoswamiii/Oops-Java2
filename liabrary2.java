@@ -3,13 +3,13 @@ import java.util.Scanner;
 class Desk {
     String[] Books = new String[10];
     int TotalBooks = 0;
+    Scanner scan = new Scanner(System.in);
 
     // For Adding books
     public void AddBooks() {
         for (int j = 1; j <= Books.length; j++) {
-            Scanner b = new Scanner(System.in);
             System.out.print("Enter Book " + j + " Name (type 'end' to stop') :  ");
-            String Book = b.nextLine();
+            String Book = scan.nextLine();
             if (Book.equals("end")) {
                 break;
             } else {
@@ -27,8 +27,7 @@ class Desk {
 
     // For Issuing Books
     public void IssueBooks() {
-        Scanner is = new Scanner(System.in);
-        String Issue = is.nextLine();
+        String Issue = scan.nextLine();
         System.out.print("Book To be Issued : " + Issue);
         for (int i = 0; i < TotalBooks; i++) {
             if (Books[i].equals(Issue)) {
@@ -51,8 +50,7 @@ class Desk {
 
     // For Returning Books
     public void ReturnBooks() {
-        Scanner ret = new Scanner(System.in);
-        String retur = ret.nextLine();
+        String retur = scan.nextLine();
         System.out.println("Book returning : " + retur);
         Books[TotalBooks] = retur;
         TotalBooks++;
@@ -62,12 +60,13 @@ class Desk {
 public class liabrary2 {
     public static void main(String[] args) {
         Desk dsk = new Desk();
-        int Looping = 10;
+        Scanner scanning = new Scanner(System.in);
+        int choice = scanning.nextInt();
         System.out.println(
                 "1 -> For Adding Books \n2 -> For Issuing Books\n3 -> For Showing Available Books \n4 -> For Returning Books");
         System.out.print("Enter Your Choice : ");
         for (int i = 0; i < 10; i++) {
-            switch (Looping) {
+            switch (choice) {
                 case 1 -> {
                     dsk.AddBooks();
                 }
