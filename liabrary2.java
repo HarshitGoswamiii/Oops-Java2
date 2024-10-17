@@ -70,6 +70,7 @@ public class liabrary2 {
         System.out.println("5 -> Exit");
         System.out.print("Enter Your Choice : ");
         int choice = scanning.nextInt();
+        scanning.nextLine();
         while (true) {
             switch (choice) {
                 case 1 -> {
