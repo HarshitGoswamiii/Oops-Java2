@@ -27,14 +27,22 @@ class Desk {
 
     // For Issuing Books
     public void IssueBooks() {
-        System.out.print("Book To be Issued : ");
+        System.out.print("Book to be Issued: ");
         String Issue = scan.nextLine();
+        boolean bookFound = false;  // Flag to track if the book was found
+    
         for (int i = 0; i < TotalBooks; i++) {
-            if(Books[i].equalsIgnoreCase(Issue))
-            if (Books[i].equals(Issue)) {
-                System.out.println("\nBooks Is Issued ! ");
-                Books[i] = null;
+            // Use equalsIgnoreCase to ignore case differences
+            if (Books[i] != null && Books[i].equalsIgnoreCase(Issue)) {
+                System.out.println("\nBook is Issued!");
+                Books[i] = null;  // Remove the book after issuing
+                bookFound = true;  // Set flag to true when book is found
+                break;  // Exit the loop after issuing the book
             }
+        }
+    
+        if (!bookFound) {
+            System.out.println("Sorry, the book '" + Issue + "' is not available in the desk.");
         }
     }
 
