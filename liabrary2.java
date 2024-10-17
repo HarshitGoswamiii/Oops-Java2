@@ -30,6 +30,7 @@ class Desk {
         System.out.print("Book To be Issued : ");
         String Issue = scan.nextLine();
         for (int i = 0; i < TotalBooks; i++) {
+            if(Books[i].equalsIgnoreCase(Issue))
             if (Books[i].equals(Issue)) {
                 System.out.println("\nBooks Is Issued ! ");
                 Books[i] = null;
