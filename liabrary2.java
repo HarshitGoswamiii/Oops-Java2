@@ -65,13 +65,14 @@ public class liabrary2 {
     public static void main(String[] args) {
         Desk dsk = new Desk();
         Scanner scanning = new Scanner(System.in);
-        System.out.println(
-                "1 -> For Adding Books \n2 -> For Issuing Books\n3 -> For Showing Available Books \n4 -> For Returning Books");
-        System.out.println("5 -> Exit");
-        System.out.print("Enter Your Choice : ");
-        int choice = scanning.nextInt();
-        scanning.nextLine();
         while (true) {
+            System.out.println(
+                    "1 -> For Adding Books \n2 -> For Issuing Books\n3 -> For Showing Available Books \n4 -> For Returning Books");
+            System.out.println("5 -> Exit");
+            System.out.print("Enter Your Choice : ");
+
+            int choice = scanning.nextInt();
+            scanning.nextLine();
             switch (choice) {
                 case 1 -> {
                     dsk.AddBooks(); // For Adding Books
