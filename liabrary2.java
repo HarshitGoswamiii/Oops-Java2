@@ -8,13 +8,15 @@ class Desk {
     public void AddBooks() {
         for (int j = 0; j < Books.length; j++) {
             Scanner b = new Scanner(System.in);
-            System.out.print("Enter Book Name : ");
+            System.out.print("Enter Book Name (type 'end to stop') :  ");
             String Book = b.nextLine();
-            if (Books.equals("End")) {
+            if (Book.equals("end")) {
                 break;
-            } else {
+            } 
+            else {
                 if (TotalBooks >= Books.length) {
                     System.out.println("Shelf is Full \nThere is no space for new book");
+                    break;
                 } else {
                     Books[TotalBooks] = Book;
                     TotalBooks++;
