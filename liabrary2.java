@@ -63,22 +63,23 @@ public class liabrary2 {
     public static void main(String[] args) {
         Desk dsk = new Desk();
         int Looping = 4;
+        System.out.println("Enter Your Choice : \n1 -> For Adding Books \n2 -> For Issuing Books\n3 -> For Showing Available Books \n4 -> For Returning Books");
         for (int i = 0; i < 10; i++) {
-        switch (Looping) {
-        case 1 -> {
-            dsk.AddBooks();
-        }
-        case 2 -> {
-            dsk.AddBooks();
-        }
-        case 3 -> {
-            dsk.AddBooks();
-        }
-        case 4 -> {
-            dsk.AddBooks();
-        }
-        default -> throw new AssertionError();
-        }
+            switch (Looping) {
+                case 1 -> {
+                    dsk.AddBooks();
+                }
+                case 2 -> {
+                    dsk.IssueBooks();
+                }
+                case 3 -> {
+                    dsk.AvailableBooks();
+                }
+                case 4 -> {
+                    dsk.ReturnBooks();
+                }
+                default -> throw new AssertionError();
+            }
         }
     }
 }
