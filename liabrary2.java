@@ -8,12 +8,11 @@ class Desk {
     public void AddBooks() {
         for (int j = 1; j <= Books.length; j++) {
             Scanner b = new Scanner(System.in);
-            System.out.print("Enter Book "+j+" Name (type 'end' to stop') :  ");
+            System.out.print("Enter Book " + j + " Name (type 'end' to stop') :  ");
             String Book = b.nextLine();
             if (Book.equals("end")) {
                 break;
-            } 
-            else {
+            } else {
                 if (TotalBooks >= Books.length) {
                     System.out.println("Shelf is Full \nThere is no space for new book");
                     break;
@@ -63,20 +62,23 @@ class Desk {
 public class liabrary2 {
     public static void main(String[] args) {
         Desk dsk = new Desk();
-
-        // Adding Books
-        dsk.AddBooks();
-        System.out.println();
-
-        dsk.AvailableBooks();
-        // int Looping = 4;
-        // for (int i = 0; i < 10; i++) {
-        // switch (Looping) {
-        // case 1 -> {
-        // dsk.AddBooks();
-        // }
-        // default -> throw new AssertionError();
-        // }
-        // }
+        int Looping = 4;
+        for (int i = 0; i < 10; i++) {
+        switch (Looping) {
+        case 1 -> {
+            dsk.AddBooks();
+        }
+        case 2 -> {
+            dsk.AddBooks();
+        }
+        case 3 -> {
+            dsk.AddBooks();
+        }
+        case 4 -> {
+            dsk.AddBooks();
+        }
+        default -> throw new AssertionError();
+        }
+        }
     }
 }
