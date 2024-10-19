@@ -10,20 +10,30 @@ public class arr {
         // System.out.println(sum);
 
         // Question 2
-        int[] arr2 = { 2, 1, 33, 43, 11, 33 };
-        int find = 3;
-        boolean found = false;
-        System.out.println("Number : " + find);
-        for (int i = 0; i < arr2.length; i++) {
-            if (find == arr2[i]) {
-                found = true;
-                break;
-            }
+        // int[] arr2 = { 2, 1, 33, 43, 11, 33 };
+        // int find = 3;
+        // boolean found = false;
+        // System.out.println("Number : " + find);
+        // for (int i = 0; i < arr2.length; i++) {
+        // if (find == arr2[i]) {
+        // found = true;
+        // break;
+        // }
+        // }
+        // if (found == true) {
+        // System.out.println("Found");
+        // } else {
+        // System.out.println("Not Found");
+        // }
+
+        // Question 3
+        int[] arr2 = { 24, 15, 23, 19, 17 };
+        int sum = 0;
+        int avg;
+        for (int element : arr2) {
+            sum += element;
         }
-        if (found == true) {
-            System.out.println("Found");
-        } else {
-            System.out.println("Not Found");
-        }
+        avg = sum / arr2.length;
+        System.out.println(avg);
     }
 }
