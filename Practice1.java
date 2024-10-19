@@ -10,12 +10,12 @@ public class Practice1 {
 
     public static void Pattern2() {
         int a = 4;
-        for (int k = 1; k <= 4; k++) {
+        for (int k = 0; k <a ; k++) {
             for (int i = 1; i <= (a-i-1); i++) {
                 System.out.print(" ");
             }
-            for (int j = 1; j <= k; j++) {
-                System.out.print("* ");
+            for (int j = 0; j <= k; j++) {
+                System.out.print(" * ");
             }
             System.out.println("");
         }
