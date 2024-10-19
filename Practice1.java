@@ -20,7 +20,7 @@ public class Practice1 {
             System.out.println("");
         }
     }
-    public static void Pascal(){
+    public static void Pascal(){ //Left Pascal Triangle
         for (int i = 1; i <= 4; i++) {
             for (int j = 1; j <= i; j++) {
                 System.out.print("* ");
@@ -33,6 +33,9 @@ public class Practice1 {
             }
             System.out.println("");
         }
+    }
+    public static void Pascal2(){
+        
     }
 
     public static void main(String[] args) {
