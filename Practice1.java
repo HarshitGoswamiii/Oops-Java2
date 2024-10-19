@@ -8,7 +8,7 @@ public class Practice1 {
         }
     }
 
-    public static void Pattern2() { //Pyramid ,  Left Triangle
+    public static void Pattern2() { // Pyramid , Left Triangle
         int a = 4;
         for (int k = 0; k < a; k++) {
             for (int i = 1; i <= (a - k - 1); i++) {
@@ -20,7 +20,8 @@ public class Practice1 {
             System.out.println("");
         }
     }
-    public static void Pascal(){ //Left Pascal Triangle
+
+    public static void Pascal() { // Left Pascal Triangle
         for (int i = 1; i <= 4; i++) {
             for (int j = 1; j <= i; j++) {
                 System.out.print("* ");
@@ -34,8 +35,14 @@ public class Practice1 {
             System.out.println("");
         }
     }
-    public static void Pascal2(){
-        
+
+    public static void Pascal2() {
+        int a = 4;
+        for (int i = 0; i <= a; i++) {
+            for (int b = 1; b < (a - i - 1); i++) {
+
+            }
+        }
     }
 
     public static void main(String[] args) {
@@ -45,6 +52,8 @@ public class Practice1 {
 
         // Pattern2();
 
-        Pascal();
+        // Pascal();
+
+        Pascal2();
     }
 }
