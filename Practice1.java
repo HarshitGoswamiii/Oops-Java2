@@ -38,7 +38,7 @@ public class Practice1 {
 
     public static void Pascal2() {
         int a = 4;
-        for (int i = a; i > 1; i++) {
+        for (int i = 0; i < a; i++) {
             for (int b = 1; b <= (a - i - 1); b++) {
                 System.out.print(" ");
             }
@@ -47,14 +47,14 @@ public class Practice1 {
             }
             System.out.println(" ");
         }
-        for (int i = 0; i < a; i++) {
-            for (int b = (a - i - 1); b >= 1; b++) {
+        for (int i = 3; i >= 1; i--) {
+            for (int b = 4; b > i; b--) {
                 System.out.print(" ");
             }
-            for (int j = 0; j <= i; j++) {
+            for (int j = 1; j <= i; j++) {
                 System.out.print("* ");
             }
-            System.out.println(" ");
+            System.out.println();
         }
     }
 
