@@ -12,7 +12,7 @@ public class Practice1 {
         int a = 4;
         for (int k = 1; k <= 4; k++) {
             for (int i = 1; i <= (a - i - 1); i++) {
-                System.out.print();
+                System.out.print(" ");
             }
         for (int j = 1; j <= k; j++) {
             System.out.println("* ");
