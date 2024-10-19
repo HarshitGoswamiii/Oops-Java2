@@ -16,10 +16,14 @@ public class arr {
         System.out.println("Number : " + find);
         for (int i = 0; i < arr2.length; i++) {
             if (find == arr2[i]) {
-                System.out.println("Found");
                 found = true;
                 break;
             }
+        }
+        if (found == true) {
+            System.out.println("Found");
+        } else {
+            System.out.println("Not Found");
         }
     }
 }
