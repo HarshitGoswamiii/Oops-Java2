@@ -40,17 +40,23 @@ public class arr {
         // int max = 0;
         // int min = arr2[0];
         // for (int i = 0; i < arr2.length; i++) {
-        //     if (max < arr2[i]) {
-        //         max = arr2[i];
-        //     } else if (min > arr2[i]) {
-        //         min = arr2[i];
-        //     }
+        // if (max < arr2[i]) {
+        // max = arr2[i];
+        // } else if (min > arr2[i]) {
+        // min = arr2[i];
+        // }
         // }
         // System.out.println(max);
         // System.out.println(min);
 
         // Question 7
-        
+        for (int i = 0; i < arr2.length; i++) {
+            if (arr2[i] > arr2[i + 1]) {
+                System.out.println("Sorted Array");
+            } else {
+                System.out.println("Unsorted Array");
+            }
+        }
 
     }
 }
