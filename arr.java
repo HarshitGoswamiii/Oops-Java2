@@ -29,7 +29,7 @@ public class arr {
         // Question 3
         int[] arr2 = { 24, 15, 23, 19, 17 };
         int sum = 0;
-        int avg;
+        float avg;
         for (int element : arr2) {
             sum += element;
         }
