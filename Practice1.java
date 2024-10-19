@@ -40,8 +40,12 @@ public class Practice1 {
         int a = 4;
         for (int i = 0; i <= a; i++) {
             for (int b = 1; b < (a - i - 1); i++) {
-
+                System.out.print(" ");
             }
+            for(int j=1;j<=i;j++){
+                System.out.print("*");
+            }
+            System.out.println("");
         }
     }
 
