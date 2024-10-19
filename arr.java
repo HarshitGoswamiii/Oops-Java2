@@ -28,12 +28,18 @@ public class arr {
 
         // Question 3
         int[] arr2 = { 24, 15, 23, 19, 17 };
-        int sum = 0;
-        float avg;
-        for (int element : arr2) {
-            sum += element;
+        // int sum = 0;
+        // float avg;
+        // for (int element : arr2) {
+        // sum += element;
+        // }
+        // avg = sum / arr2.length;
+        // System.out.println(avg);
+
+        // Question 5
+        int[] reverse;
+        for (int i = 0; i <= arr2.length; i++) {
+            
         }
-        avg = sum / arr2.length;
-        System.out.println(avg);
     }
 }
