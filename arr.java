@@ -27,7 +27,7 @@ public class arr {
         // }
 
         // Question 3
-        int[] arr2 = { 24, 15, 23, 19, 17 };
+        int[] arr2 = { 24, 15, 29, 19, 17 };
         // int sum = 0;
         // float avg;
         // for (int element : arr2) {
@@ -37,8 +37,13 @@ public class arr {
         // System.out.println(avg);
 
         // Question 6
-        for(int i =0;i<arr2.length;i++){
-            
+        int max = 0;
+        int min = 0;
+        for (int i = 0; i < arr2.length; i++) {
+            if (max < arr2[i]) {
+                max = arr2[i];
+            }
         }
+        System.out.println(max);
     }
 }
