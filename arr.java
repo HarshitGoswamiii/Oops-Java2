@@ -10,7 +10,17 @@ public class arr {
         // System.out.println(sum);
 
         // Question 2
-        
-
+        int[] arr2 = {2,1,33,43,11,33};  
+        int find=3;      
+        System.out.println("Number : "+find);
+        for (int i = 0; i < arr2.length; i++) {
+            if(find==arr2[i]){
+                System.out.println("Found");
+                break;
+            }
+            else{
+                System.out.println("Not Found");
+            }
+        }
     }
 }
