@@ -37,9 +37,12 @@ public class arr {
         // System.out.println(avg);
 
         // Question 5
-        int[] reverse;
+        int[] reverse = {};
         for (int i = 0; i <= arr2.length; i++) {
-            
+            reverse[i] = arr2[i];
+            for(int j=0;j<=reverse.length;j++){
+                System.out.println(reverse[j]);
+            }
         }
     }
 }
