@@ -50,7 +50,6 @@ public class arr {
         // System.out.println(min);
 
         // Question 7
-        
         for (int i = 0; i < arr2.length; i++) {
             if (arr2[i] > arr2[i + 1]) {
                 System.out.println("Sorted Array");
