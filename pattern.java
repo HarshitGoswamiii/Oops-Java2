@@ -39,13 +39,15 @@ class patterning {
             System.out.println("");
         }
     }
+
+    public void pattern5(){
+        
+    }
 }
 
 public class pattern {
     public static void main(String[] args) {
         patterning ptr = new patterning();
         ptr.pattern4();
-        ptr.pattern3();
-
     }
 }
