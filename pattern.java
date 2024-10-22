@@ -22,9 +22,12 @@ class patterning {
         }
     }
 
-    public void pattern3() {
-        for (int i = 0; i < 5; i++) {
-               
+    public void pattern3() { // Half Pyramid
+        for (int i = 1; i <= 4; i++) {
+            for (int j = 1; j <= 4; j++) {
+                System.out.print("* ");   
+            }
+            
         }
     }
 }
