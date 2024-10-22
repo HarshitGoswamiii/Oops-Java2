@@ -52,6 +52,10 @@ class patterning {
             System.out.println(" ");
         }
     }
+
+    public void pattern6(){
+        
+    }
 }
 
 public class pattern {
