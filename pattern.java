@@ -14,10 +14,17 @@ class patterning {
             for (int j = 1; j <= 4; j++) {
                 if (i == 1 || j == 1 || i == 4 || j == 4) {
                     System.out.print("* ");
+                } else {
+                    System.out.print("  ");
                 }
-                System.out.print(" ");
             }
             System.out.println();
+        }
+    }
+
+    public void pattern3() {
+        for (int i = 0; i < 5; i++) {
+               
         }
     }
 }
