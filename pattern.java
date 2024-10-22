@@ -70,11 +70,20 @@ class patterning {
             System.out.println();
         }
     }
+
+    public void pattern8() { // Floyd Triangle
+        for (int i = 1; i <= 5; i++) {
+            for (int j = 1; j <= 15; j++) {
+                System.out.print(j);
+            }
+            System.out.println();
+        }
+    }
 }
 
 public class pattern {
     public static void main(String[] args) {
         patterning ptr = new patterning();
-        ptr.pattern7();
+        ptr.pattern8();
     }
 }
