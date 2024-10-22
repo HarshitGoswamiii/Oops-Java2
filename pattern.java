@@ -40,14 +40,23 @@ class patterning {
         }
     }
 
-    public void pattern5(){
-        
+    public void pattern5() { // Inverted Left Half Pyramid
+        int a = 4;
+        for (int i = 1; i <= 4; i++) {
+            for (int b = 1; b < (a - i - 1); b++) {
+                System.out.print("* ");
+            }
+            for (int j = 1; j <= 4; j++) {
+                System.out.print(" ");
+            }
+            System.out.println(" ");
+        }
     }
 }
 
 public class pattern {
     public static void main(String[] args) {
         patterning ptr = new patterning();
-        ptr.pattern4();
+        ptr.pattern5();
     }
 }
