@@ -27,7 +27,7 @@ class patterning {
             for (int j = 1; j <= 4; j++) {
                 System.out.print("* ");   
             }
-            
+            System.out.println("");
         }
     }
 }
@@ -35,6 +35,6 @@ class patterning {
 public class pattern {
     public static void main(String[] args) {
         patterning ptr = new patterning();
-        ptr.pattern2();
+        ptr.pattern3();
     }
 }
