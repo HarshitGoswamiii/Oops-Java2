@@ -64,8 +64,8 @@ class patterning {
 
     public void pattern7() { // Inverted Half Pyramid with Numbers
         for (int i = 1; i <= 5; i++) {
-            for (int j = i; j > 1; j++) {
-                System.out.print(j+" ");
+            for (int j = i; j >= 1; j--) {
+                System.out.print(j + " ");
             }
             System.out.println();
         }
@@ -75,6 +75,6 @@ class patterning {
 public class pattern {
     public static void main(String[] args) {
         patterning ptr = new patterning();
-        ptr.pattern6();
+        ptr.pattern7();
     }
 }
