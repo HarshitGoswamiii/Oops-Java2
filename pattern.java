@@ -53,14 +53,19 @@ class patterning {
         }
     }
 
-    public void pattern6(){
-        
+    public void pattern6() { // Half Pyramid
+        for (int i = 1; i <= 5; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print(j+" ");
+            }
+            System.out.println();
+        }
     }
 }
 
 public class pattern {
     public static void main(String[] args) {
         patterning ptr = new patterning();
-        ptr.pattern5();
+        ptr.pattern6();
     }
 }
