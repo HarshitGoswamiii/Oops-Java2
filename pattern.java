@@ -98,7 +98,7 @@ class patterning {
     public void pattern10() { // Butterfly pattern
         int n = 4;
 
-        //UPPER HALF
+        // UPPER HALF
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= i; j++) { // For Printing stars
                 System.out.print("*");
@@ -117,7 +117,7 @@ class patterning {
             for (int j = 1; j <= i; j++) { // For Printing stars
                 System.out.print("*");
             }
-            int spaces=2*(n-i);
+            int spaces = 2 * (n - i);
             for (int j = 1; j <= spaces; j++) {
                 System.out.print(" ");
             }
@@ -127,10 +127,16 @@ class patterning {
             System.out.println();
         }
     }
-    
-    public void pattern11(){ //Solid Rhombus
+
+    public void pattern11() { // Solid Rhombus
         for (int i = 0; i <= 5; i++) {
-            
+            for (int j = 0; j < i; j++) {
+                System.out.print(" ");
+            }
+            for (int j = 0; j < i; j++) {
+                System.out.print(" ");
+            }
+            System.out.println();
         }
     }
 }
@@ -138,6 +144,6 @@ class patterning {
 public class pattern {
     public static void main(String[] args) {
         patterning ptr = new patterning();
-        ptr.pattern10();
+        ptr.pattern11();
     }
 }
