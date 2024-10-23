@@ -153,6 +153,10 @@ class patterning {
             System.out.println();
         }
     }
+
+    public void pattern13(){
+        
+    }
 }
 
 public class pattern {
