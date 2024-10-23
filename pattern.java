@@ -157,12 +157,12 @@ class patterning {
     public void pattern13() { // Palindromic Pyramid Pattern
         int n = 5;
         for (int i = 1; i <= n - 1; i++) {
-            //Spaces
+            // Spaces
             for (int j = 1; j <= n; j++) {
                 System.out.print(" ");
             }
             // Ist Half
-            for(int j=i;j>=1;j--){
+            for (int j = i; j >= 1; j--) {
                 System.out.print(j);
             }
             // IInd Half
