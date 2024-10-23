@@ -140,6 +140,10 @@ class patterning {
             System.out.println();
         }
     }
+
+    public void patter12(){
+        
+    }
 }
 
 public class pattern {
