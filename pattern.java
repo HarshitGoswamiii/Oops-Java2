@@ -94,6 +94,8 @@ class patterning {
             System.out.println();
         }
     }
+
+    public void 
 }
 
 public class pattern {
