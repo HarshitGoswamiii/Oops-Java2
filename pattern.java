@@ -154,14 +154,20 @@ class patterning {
         }
     }
 
-    public void pattern13(){
-        
+    public void pattern13() { // Palindromic Pattern
+        int n = 5;
+        for (int i = 1; i <= n - 1; i++) {
+            System.out.print(" ");
+        }
+        for (int j = 1; j <= n; j++) {
+
+        }
     }
 }
 
 public class pattern {
     public static void main(String[] args) {
         patterning ptr = new patterning();
-        ptr.pattern12();
+        ptr.pattern13();
     }
 }
