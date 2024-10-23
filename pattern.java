@@ -131,7 +131,7 @@ class patterning {
     public void pattern11() { // Solid Rhombus
         int n = 5;
         for (int i = 1; i <= n; i++) {
-            for (int j = i; j <= n - i; j++) {
+            for (int j = 1; j <= n - i; j++) {
                 System.out.print(" ");
             }
             for (int j = 1; j <= 5; j++) {
