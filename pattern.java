@@ -121,7 +121,7 @@ class patterning {
             for (int j = 1; j <= spaces; j++) {
                 System.out.print(" ");
             }
-            for (int j = i; j <= i; j++) { // For Printing stars
+            for (int j = 1; j <= i; j++) { // For Printing stars
                 System.out.print("*");
             }
             System.out.println();
