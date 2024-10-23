@@ -172,6 +172,10 @@ class patterning {
             System.out.println();
         }
     }
+
+    public void pattern14() { // Diamond Pattern
+        
+    }
 }
 
 public class pattern {
