@@ -95,12 +95,25 @@ class patterning {
         }
     }
 
-    public void 
+    public void pattern10() { // Butterfly pattern
+        int n = 4;
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= i; j++) { // For Printing stars
+                System.out.print("* ");
+            }
+            for (int j = 1; j <= 2 * (n - i); j++) {
+                System.out.print(" ");
+            }
+            for (int j = 1; j <= i; j++) { // For Printing stars
+                System.out.print("* ");
+            }
+        }
+    }
 }
 
 public class pattern {
     public static void main(String[] args) {
         patterning ptr = new patterning();
-        ptr.pattern9();
+        ptr.pattern10();
     }
 }
