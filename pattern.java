@@ -98,7 +98,7 @@ class patterning {
     public void pattern10() { // Butterfly pattern
         int n = 4;
 
-        //UPPER HALF
+        // UPPER HALF
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= i; j++) { // For Printing stars
                 System.out.print("*");
@@ -114,13 +114,13 @@ class patterning {
 
         // LOWER HALF
         for (int i = 1; i <= n; i++) {
-            for (int j = 1; j <= i; j++) { // For Printing stars
+            for (int j = i; j <= 1; j++) { // For Printing stars
                 System.out.print("*");
             }
-            for (int j = 1; j <= 2 * (n - i); j++) {
+            for (int j = 2 * (n - i); j <= 1; j++) {
                 System.out.print(" ");
             }
-            for (int j = 1; j <= i; j++) { // For Printing stars
+            for (int j = i; j <= 1; j++) { // For Printing stars
                 System.out.print("*");
             }
             System.out.println();
