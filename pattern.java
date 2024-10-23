@@ -141,11 +141,12 @@ class patterning {
         }
     }
 
-    public void patter12() { // Number Pyramid
+    public void pattern12() { // Number Pyramid
         for (int i = 1; i <= 4; i++) {
             for (int j = 1; j <= 5; j++) {
-
+                System.out.print(i);
             }
+            System.out.println();
         }
     }
 }
@@ -153,6 +154,6 @@ class patterning {
 public class pattern {
     public static void main(String[] args) {
         patterning ptr = new patterning();
-        ptr.pattern11();
+        ptr.pattern12();
     }
 }
