@@ -114,13 +114,13 @@ class patterning {
 
         // LOWER HALF
         for (int i = 1; i <= n; i++) {
-            for (int j = i; j <= 1; j++) { // For Printing stars
+            for (int j = i; j < 1; j++) { // For Printing stars
                 System.out.print("*");
             }
-            for (int j = 2 * (n - i); j <= 1; j++) {
+            for (int j = 2 * (n - i); j < 1; j++) {
                 System.out.print(" ");
             }
-            for (int j = i; j <= 1; j++) { // For Printing stars
+            for (int j = i; j < 1; j++) { // For Printing stars
                 System.out.print("*");
             }
             System.out.println();
