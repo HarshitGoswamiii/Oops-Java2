@@ -154,13 +154,22 @@ class patterning {
         }
     }
 
-    public void pattern13() { // Palindromic Pattern
+    public void pattern13() { // Palindromic Pyramid Pattern
         int n = 5;
         for (int i = 1; i <= n - 1; i++) {
-            System.out.print(" ");
-        }
-        for (int j = 1; j <= n; j++) {
-
+            //Spaces
+            for (int j = 1; j <= n; j++) {
+                System.out.print(" ");
+            }
+            // Ist Half
+            for(int j=i;j>=1;j--){
+                System.out.print(j);
+            }
+            // IInd Half
+            for (int j = 2; j <= i; j++) {
+                System.out.print(j);
+            }
+            System.out.println();
         }
     }
 }
