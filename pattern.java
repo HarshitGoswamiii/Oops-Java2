@@ -114,7 +114,7 @@ class patterning {
 
         // LOWER HALF
         for (int i = n; i >= 1; i--) {
-            for (int j = i; j <= 1; j++) { // For Printing stars
+            for (int j = 1; j <= i; j++) { // For Printing stars
                 System.out.print("*");
             }
             int spaces=2*(n-i);
