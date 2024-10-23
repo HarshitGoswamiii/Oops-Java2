@@ -127,6 +127,12 @@ class patterning {
             System.out.println();
         }
     }
+    
+    public void pattern11(){ //Solid Rhombus
+        for (int i = 0; i <= 5; i++) {
+            
+        }
+    }
 }
 
 public class pattern {
